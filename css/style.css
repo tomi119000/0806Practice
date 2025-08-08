@@ -1,5 +1,40 @@
 span{
     color:orange;
-    
+
 }
 
+section{
+    /* background-color:yellow; */
+    background-image: url("../images/main-visual.png");
+    height: 400px;
+    width: 100%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* ポジション左右上下 */
+    background-position: center center;
+}
+
+div{
+    /* 最大でも（横幅は）1000pxまで */
+    max-width: 1000px;
+
+}
+
+p{
+    /* color:white */
+}
+
+a{
+    color:white;
+    /* 文字の背景をオレンジにする */
+    background-color: orange;
+    /* 下線をなくす */
+    text-decoration: none;
+    /* 太字にする */
+    font-weight: bold;;
+    /* 上下左右の余白。ここでは縦3％、横5％. 数字1つの場合は上下左右 */
+    padding: 3% 5%; 
+    /* 角に丸みをつける：左上→右上→右下→左下 */
+    border-radius: 8px;
+}
