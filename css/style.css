@@ -13,6 +13,17 @@ section{
     background-size: cover;
     /* ポジション左右上下 */
     background-position: center center;
+    /* 上側の内余白 */
+    padding-top: 60px;
+    /* 余白計算を含み計算にする */
+    box-sizing: border-box;
+}
+
+.wrapper{
+    /* 最大でも1000pxまで */
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 
 div{
@@ -22,19 +33,39 @@ div{
 }
 
 p{
-    /* color:white */
+    color:white;
+    text-align: center;
 }
 
-a{
-    color:white;
-    /* 文字の背景をオレンジにする */
+.main-catch{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.cta-button{
+    /* font-size: 20px; */
+    color: white;
+    /* 背景オレンジ */
     background-color: orange;
     /* 下線をなくす */
     text-decoration: none;
-    /* 太字にする */
-    font-weight: bold;;
-    /* 上下左右の余白。ここでは縦3％、横5％. 数字1つの場合は上下左右 */
-    padding: 3% 5%; 
-    /* 角に丸みをつける：左上→右上→右下→左下 */
+    /* 太字 */
+    font-weight: bold;
+    /* 内側の余白 */
+    padding: 3% 5%;
+    /* 角の丸み　左上　右上　右下　左下 */
     border-radius: 8px;
+
+    /* 性格をpやdivと同じに捻じ曲げる */
+    display: block; /*もともとはinline */
+    /* 中央揃え */
+    text-align: center;
+    /* 幅を絞る */
+    width: 30%;
+    /* 外側の余白 */
+    /* margin-top: 20px; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin: 20px auto 0;
+
 }
