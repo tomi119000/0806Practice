@@ -15,7 +15,7 @@ section{
     background-position: center center;
     /* 上側の内余白 */
     padding-top: 60px;
-    /* 余白計算を含み計算にする */
+    /* 余白計算を含み計算にする. 高さは400pxを維持してその中で余白をとる */
     box-sizing: border-box;
 }
 
@@ -26,11 +26,6 @@ section{
 
 }
 
-div{
-    /* 最大でも（横幅は）1000pxまで */
-    max-width: 1000px;
-
-}
 
 p{
     color:white;
@@ -57,15 +52,20 @@ p{
     border-radius: 8px;
 
     /* 性格をpやdivと同じに捻じ曲げる */
-    display: block; /*もともとはinline */
+    /*もともとはinlineという性格。inlineだとmarginとかが効かない。これをblock性質に変える。*/
+    /* https://saruwakakun.com/html-css/basic/display */
+    display: block; 
+
     /* 中央揃え */
     text-align: center;
     /* 幅を絞る */
     width: 30%;
     /* 外側の余白 */
     /* margin-top: 20px; */
-    /* margin-right: auto; */
-    /* margin-left: auto; */
+    /* margin-right: auto; 　autoは左右の余白を均等にする */
+    /* margin-left: auto;　 autoは左右の余白を均等にする*/
+    /* margin-bottom */
     margin: 20px auto 0;
 
 }
+
